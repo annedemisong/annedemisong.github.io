@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+}
+
+.row:after,
+.row:before {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding: 6px; /*spacing between each column*/
+}
+
+@for $i from 1 through 12 {
+  $correction: 0.01% * floor($i/3);
+  .col-#{$i} {
+    width: (8.33% * $i) + $correction;
+  }
+}
