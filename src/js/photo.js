@@ -3,7 +3,7 @@ var Photograph = React.createClass({
   render: function() {
     return (
       <div class="photograph">
-        <img src="{this.props.imgSrc}">
+        <img src="{this.props.imgSrc}" />
       </div>
     );
   }

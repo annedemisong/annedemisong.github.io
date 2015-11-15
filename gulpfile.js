@@ -44,4 +44,23 @@ gulp.task('lib-css', function(){
     .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('default', ['move', 'lib-js', 'lib-css']);
+gulp.task('app-js', function(){
+  return gulp.src([
+    'src/js/photo.js'
+  ])
+    .pipe(babel())
+    .pipe(concat('app.js'))
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('app-css', function(){
+  return gulp.src('src/scss/app.scss')
+    .pipe(sass())
+    .pipe(minify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist/css'))
+});
+
+gulp.task('default', ['move', 'lib-js', 'lib-css', 'app-js', 'app-css']);
