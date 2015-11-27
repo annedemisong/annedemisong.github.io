@@ -16,7 +16,6 @@
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  padding: 6px; /*spacing between each column*/
 }
 
 @for $i from 1 through 12 {

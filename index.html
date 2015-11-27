@@ -8,61 +8,68 @@
   <link rel="stylesheet" href="dist/css/app.min.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <!--Sidebar Navigation-->
-      <div class="col-2">
-        <ul>
-          <li>
-            <a href="#">Conceptual</a>
-          </li>
-          <li>
-            <a href="#">Portraits</a>
-          </li>
-          <li>
-            <a href="#">About Me</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+  <!--Sidebar Navigation-->
+  <div class="navigation">
+    <h2>CoolLogo.png</h2>
+
+    <ul>
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Conceptual</a>
+      </li>
+      <li>
+        <a href="#">Portraits</a>
+      </li>
+      <li>
+        <a href="#">About Me</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!--Main Content-->
+  <div class="content">
+    <!--Placeholder for SVG signature-->
+    <h1>Anne Demigillo Songcayauon</h1>
+
+    <div class="polaroid-container" id="polaroid-1">
+      <img src="dist/img/anne1.jpg">
+    </div>
+
+    <div class="photo-layout js-masonry"
+      data-masonry-options='{ "itemSelector": ".photo"}'>
+      <div class="photo">
+        <img src="http://placehold.it/500x400">
       </div>
-      <!--Main Content-->
-      <div class="col-10">
-        <!--Placeholder for SVG signature-->
-        <h1>Anne Demigillo Songcayauon</h1>
-
-        <div class="polaroid-container" id="polaroid-1">
-          <img src="dist/img/anne1.jpg">
-        </div>
-
-        <div class="photo-layout js-masonry"
-          data-masonry-options='{ "itemSelector": ".photo"}'>
-          <div class="photo">
-            <img src="http://placehold.it/500x400">
-          </div>
-          <div class="photo">
-            <img src="http://placehold.it/200x500">
-          </div>
-          <div class="photo">
-            <img src="http://placehold.it/200x300">
-          </div>
-          <div class="photo">
-            <img src="http://placehold.it/200x600">
-          </div>
-          <div class="photo">
-            <img src="http://placehold.it/200x250">
-          </div>
-          <div class="photo">
-            <img src="http://placehold.it/200x300">
-          </div>
-          <div class="photo">
-            <img src="http://placehold.it/200x100">
-          </div>
-        </div>
-
+      <div class="photo">
+        <img src="http://placehold.it/200x500">
+      </div>
+      <div class="photo">
+        <img src="http://placehold.it/200x300">
+      </div>
+      <div class="photo">
+        <img src="http://placehold.it/200x600">
+      </div>
+      <div class="photo">
+        <img src="http://placehold.it/200x250">
+      </div>
+      <div class="photo">
+        <img src="http://placehold.it/200x300">
+      </div>
+      <div class="photo">
+        <img src="http://placehold.it/200x100">
+      </div>
+      <div class="photo">
+        <img src="http://placehold.it/200x250">
+      </div>
+      <div class="photo">
+        <img src="http://placehold.it/200x300">
       </div>
     </div>
+
   </div>
   <script type="text/javascript" src="dist/js/lib.min.js"></script>
   <script type="text/javascript" src="dist/js/app.min.js"></script>

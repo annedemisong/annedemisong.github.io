@@ -28,7 +28,9 @@ gulp.task('lib-js', function(){
   return gulp.src(
       ['node_modules/react/dist/react.js',
        'node_modules/masonry-layout/dist/masonry.pkgd.js',
-       'node_modules/imagesloaded/imagesloaded.pkgd.js'],
+       'node_modules/imagesloaded/imagesloaded.pkgd.js',
+       'node_modules/photoswipe/dist/photoswipe.js',
+       'node_modules/photoswipe/dist/photoswipe-ui-default.js'],
       {base : 'node_modules/'})
     .pipe(concat('lib.min.js'))
     .pipe(uglify())
@@ -38,7 +40,9 @@ gulp.task('lib-js', function(){
 gulp.task('lib-css', function(){
   return gulp.src(
       ['node_modules/font-awesome/css/font-awesome.css',
-       'node_modules/normalize.css/normalize.css'],
+       'node_modules/normalize.css/normalize.css',
+       'node_modules/photoswipe/dist/photoswipe.css',
+       'node_modules/photoswipe/dist/default-skin/default-skin.css'],
       {base: 'node_modules/'})
     .pipe(concat('lib.min.css'))
     .pipe(minify())
