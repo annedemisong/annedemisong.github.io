@@ -25,3 +25,17 @@
     filter: brightness(100%);
   }
 }
+
+.photo-layout {
+  width: 100%;
+}
+
+.photo {
+  width: 25%;
+
+  img {
+    padding: 10px;
+    padding-bottom: 5px; 
+    width: 100%;
+  }
+}

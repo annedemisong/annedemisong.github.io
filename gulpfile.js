@@ -27,7 +27,8 @@ gulp.task('move', function(){
 gulp.task('lib-js', function(){
   return gulp.src(
       ['node_modules/react/dist/react.js',
-       'node_modules/hammerjs/hammer.js'],
+       'node_modules/masonry-layout/dist/masonry.pkgd.js',
+       'node_modules/imagesloaded/imagesloaded.pkgd.js'],
       {base : 'node_modules/'})
     .pipe(concat('lib.min.js'))
     .pipe(uglify())
@@ -46,7 +47,7 @@ gulp.task('lib-css', function(){
 
 gulp.task('app-js', function(){
   return gulp.src([
-    'src/js/photo.js'
+    'src/js/photoLayout.js'
   ])
     .pipe(babel())
     .pipe(concat('app.js'))
@@ -65,6 +66,7 @@ gulp.task('app-css', function(){
 
 gulp.task('watch', function(){
   gulp.watch('src/scss/**', ['app-css']);
+  gulp.watch('src/js/**', ['app-js']);
 });
 
 gulp.task('default', ['move', 'lib-js', 'lib-css', 'app-js', 'app-css', 'watch']);
