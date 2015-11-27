@@ -1,1 +1,27 @@
 @import 'grid';
+
+.polaroid-container {
+  border: 1px solid #d3d3d3;
+  border-radius: 2px;
+  width: 440px;
+  height: 540px;
+  background-color: #f2f2f2;
+
+  img {
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    animation: polaroid-fadein 4s ease-in-out;
+  }
+}
+
+@keyframes polaroid-fadein {
+  from {
+    -webkit-filter: brightness(0%);
+    filter: brightness(0%);
+  }
+  to {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+}

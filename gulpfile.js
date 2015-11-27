@@ -63,4 +63,8 @@ gulp.task('app-css', function(){
     .pipe(gulp.dest('dist/css'))
 });
 
-gulp.task('default', ['move', 'lib-js', 'lib-css', 'app-js', 'app-css']);
+gulp.task('watch', function(){
+  gulp.watch('src/scss/**', ['app-css']);
+});
+
+gulp.task('default', ['move', 'lib-js', 'lib-css', 'app-js', 'app-css', 'watch']);
