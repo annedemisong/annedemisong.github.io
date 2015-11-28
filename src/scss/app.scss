@@ -79,15 +79,14 @@ li.active {
   }
 }
 
-
-// .photo-layout {
-//   width: 100%;
-// }
+.photo-layout {
+  width: 100%;
+}
 
 .photo {
   width: 25%;
 
-  a img {
+  img {
     padding: 10px;
     padding-bottom: 5px;
     width: 100%;
@@ -95,20 +94,8 @@ li.active {
 }
 
 // THUMBNAIL & GALLERY STOOF
-.my-gallery {
-  width: 100%;
-  // float: left;
-}
-// .my-gallery img {
-//   width: 100%;
-//   height: auto;
-// }
 .my-gallery figure {
-  width: 25%;
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-  width: 150px;
+  margin: 0;
 }
 .my-gallery figcaption {
   display: none;
