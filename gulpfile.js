@@ -51,7 +51,8 @@ gulp.task('lib-css', function(){
 
 gulp.task('app-js', function(){
   return gulp.src([
-    'src/js/photoLayout.js'
+    'src/js/photoLayout.js',
+    'src/js/thumbnailToGallery.js'
   ])
     .pipe(babel())
     .pipe(concat('app.js'))
